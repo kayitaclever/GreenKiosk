@@ -1,4 +1,4 @@
-#!/home/student/pythonclass/projects/myenv/bin/python3
+#!/home/oem/Django-models/myenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
