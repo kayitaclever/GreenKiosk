@@ -17,3 +17,20 @@ class Cart(models.Model):
     quantity_of_items = models.CharField(max_length=6)
    
 
+    def add_product(self, product):
+        self.products.add(product)
+        self.save()
+        return self 
+    
+    def calculate_total(self):
+        products= self.product.all()
+        total=0
+        for product in products:
+            total+= product.price
+            return total
+        
+
+    
+
+
+        
